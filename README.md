@@ -2,11 +2,6 @@
 
 Aplikasi tiruan antarmuka (*UI Clone*) **Facebook** yang dibangun menggunakan framework **Flutter** dan bahasa pemrograman **Dart**. Proyek ini dibuat untuk memenuhi tugas Ujian Tengah Semester (UTS) mata kuliah Mobile Programming.
 
-## Identitas Mahasiswa
-* **Nama:** Eka Maulana
-* **NIM:** [Isi NIM kamu]
-* **Kelas:** [Isi Kelas kamu]
-
 ## Fitur & Halaman yang Diimplementasikan
 1. **Halaman Login (`login_page.dart`)**
    * Validasi input format email (`@` dan domain lengkap) serta panjang kata sandi minimal 6 karakter.
@@ -36,3 +31,15 @@ lib/
 └── widgets/
     ├── post_card.dart
     └── story_section.dart
+```
+
+# Cara Menjalankan Proyek
+1. Clone repository ini:
+git clone [https://github.com/ndarcuy/uts-flutter-facebook-clone.git](https://github.com/ndarcuy/uts-flutter-facebook-clone.git)
+
+2. Masuk ke direktori proyek dan unduh dependensi:
+cd uts-flutter-facebook-clone
+flutter pub get
+
+3. Jalankan aplikasi di browser Chrome:
+flutter run -d chrome
