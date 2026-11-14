@@ -66,14 +66,14 @@ class _HomePageState extends State<HomePage> {
             ),
             Divider(height: 1),
             ListTile(
-              leading: CircleAvatar(child: Text('A')),
-              title: Text('Afif Ramadhan'),
-              subtitle: Text('Gimana progress tugas UTS-nya bro?'),
+              leading: CircleAvatar(child: Text('F')),
+              title: Text('Farid Hisyam'),
+              subtitle: Text('Gimana progress tugas UTSnya bro?'),
               trailing: Text('10:20'),
             ),
             ListTile(
-              leading: CircleAvatar(child: Text('M')),
-              title: Text('Maulana Arkha'),
+              leading: CircleAvatar(child: Text('A')),
+              title: Text('Arka Raffinendra'),
               subtitle: Text('Oke siap, nanti ketemu di kampus'),
               trailing: Text('08:15'),
             ),
@@ -201,7 +201,7 @@ class _HomePageState extends State<HomePage> {
                   message: 'Lihat Profil',
                   child: CircleAvatar(
                     backgroundColor: Color(0xFF1877F2),
-                    child: Text('EM', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                    child: Text('CN', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                   ),
                 ),
               ),
@@ -230,7 +230,7 @@ class _HomePageState extends State<HomePage> {
           time: '2 jam',
           text: 'Tugas Mobile Programming membuat tiruan UI Facebook dengan Flutter selesai dirapikan! 🚀',
           initialLikes: '142',
-          imageUrl: 'https://picsum.photos/600/350',
+          imageUrl: 'assets/images/image2.png',
           comments: [
             CommentItem(user: 'Eka Afif', text: 'Keren banget bro, tampilannya mirip aslinya!'),
             CommentItem(user: 'Firliana', text: 'gokil!'),
@@ -242,7 +242,7 @@ class _HomePageState extends State<HomePage> {
           time: '5 jam',
           text: 'Kunci nilai bagus di UTS adalah clean code, responsivitas, dan interaksi tombol yang nyata!',
           initialLikes: '280',
-          imageUrl: 'https://picsum.photos/600/360',
+          imageUrl: 'assets/images/image3.png',
           comments: [
             CommentItem(user: 'Arka Raffinendra ', text: 'Betul, dosen penguji pasti suka pemisahan filenya.'),
             CommentItem(user: 'Farid Hisyam', text: 'Mantap, semangat buat yang lagi ngerjain tugas!'),

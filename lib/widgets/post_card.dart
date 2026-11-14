@@ -239,17 +239,25 @@ class _PostCardState extends State<PostCard> {
             child: Text(widget.text, style: const TextStyle(fontSize: 14)),
           ),
           const SizedBox(height: 8),
-          Image.network(
-            widget.imageUrl,
-            width: double.infinity,
-            height: 240,
-            fit: BoxFit.cover,
-            errorBuilder: (context, error, stackTrace) => Container(
-              height: 200,
-              color: Colors.grey.shade200,
-              child: const Icon(Icons.broken_image, size: 40, color: Colors.grey),
-            ),
-          ),
+          Image.asset(
+  widget.imageUrl,
+  width: double.infinity,
+  height: 240,
+  fit: BoxFit.cover,
+  errorBuilder: (context, error, stackTrace) => Container(
+    width: double.infinity, // Agar penuh selebar kartu jika file salah nama
+    height: 240,
+    color: Colors.grey.shade200,
+    child: const Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Icon(Icons.image_not_supported, size: 40, color: Colors.grey),
+        SizedBox(height: 8),
+        Text('Gambar tidak ditemukan', style: TextStyle(color: Colors.grey)),
+      ],
+    ),
+  ),
+),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
             child: Row(

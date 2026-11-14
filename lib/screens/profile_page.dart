@@ -9,9 +9,9 @@ class ProfilePage extends StatelessWidget {
 
   const ProfilePage({
     super.key,
-    this.name = 'Eka Maulana',
+    this.name = 'Cahyo Ndaru',
     this.bio = 'Mahasiswa Teknik Komputer & Jaringan',
-    this.initials = 'EM',
+    this.initials = 'CN',
     this.location = 'Tinggal di Surabaya, Indonesia',
     this.school = 'Kuliah di Politeknik',
   });
@@ -35,14 +35,28 @@ class ProfilePage extends StatelessWidget {
                 clipBehavior: Clip.none,
                 alignment: Alignment.bottomCenter,
                 children: [
-                  Container(
+                Container(
                     height: 180,
                     width: double.infinity,
                     color: Colors.blueGrey.shade200,
-                    child: Image.network(
-                      'https://picsum.photos/800/300',
+                    child: Image.asset(
+                      'assets/images/image1.png', // <-- Wajib diisi nama file gambarnya di sini
+                      width: double.infinity,
+                      height: 180,
                       fit: BoxFit.cover,
-                      errorBuilder: (context, error, stackTrace) => Container(color: Colors.blueGrey),
+                      errorBuilder: (context, error, stackTrace) => Container(
+                        width: double.infinity,
+                        height: 180,
+                        color: Colors.grey.shade200,
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.image_not_supported, size: 40, color: Colors.grey),
+                            SizedBox(height: 8),
+                            Text('Gambar tidak ditemukan', style: TextStyle(color: Colors.grey)),
+                          ],
+                        ),
+                      ),
                     ),
                   ),
                   Positioned(
