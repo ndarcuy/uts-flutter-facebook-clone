@@ -43,3 +43,15 @@ flutter pub get
 
 3. Jalankan aplikasi di browser Chrome:
 flutter run -d chrome
+
+## Tangkapan Layar (*Screenshots*)
+
+### 1. Halaman Login & Registrasi
+| Halaman Login | Halaman Register |
+| :---: | :---: |
+| ![Halaman Login](screenshots/login.png) | ![Halaman Register](screenshots/register.png) |
+
+### 2. Dashboard & Halaman Profil
+| Dashboard Beranda | Profil Pengguna |
+| :---: | :---: |
+| ![Dashboard](screenshots/dashboard.png) | ![Profil Pengguna](screenshots/profil.png) |
